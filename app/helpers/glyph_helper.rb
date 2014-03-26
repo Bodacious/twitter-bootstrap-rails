@@ -1,11 +1,11 @@
 module GlyphHelper
   # ==== Examples
   # glyph(:share_alt)
-  # # => <i class="icon-share-alt"></i>
+  # # => <i class="fa fa-share-alt"></i>
   # glyph(:lock, :white)
-  # # => <i class="icon-lock icon-white"></i>
+  # # => <i class="fa fa-lock fa-white"></i>
   # glyph(:thumbs_up, :pull_left)
-  # # => <i class="icon-thumbs-up pull-left"></i>
+  # # => <i class="fa fa-thumbs-up pull-left"></i>
 
   def glyph(*names)
     names.map! { |name| name.to_s.gsub('_','-') }
